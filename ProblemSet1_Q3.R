@@ -20,10 +20,10 @@ P_sfc = 101325 #surface pressure (Pa)
 e_sT = e_s0*exp(LvRv*(1/T_0 - 1/T_a)) #4358.229 
 e_sTw = e_s0*exp(LvRv*(1/T_0 - 1/T_w)) #3228.665
 
-##Saturated specific humidty
+##Saturated specific humidity
 q_s = epsilon*(e_sTw/P_sfc) #0.01981969
                 
-##Wet-bulb Temperature eqn rearrange to get specific humidty 
+##Wet-bulb Temperature eqn rearrange to get specific humidity 
 q = q_s - (C_pd*(T_a - T_w))/L_v #0.01781169
 
 ##vapor pressure
